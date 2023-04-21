@@ -26,7 +26,7 @@ class Chat():
 @client.event
 async def on_ready():
     os.system("cls if os.name == 'nt' else clear")
-    print("conneted; %s" % client.user)
+    print("connected; %s" % client.user)
     ok = await client.tree.sync()
     game = discord.Game("exploit#1337")
     await client.change_presence(activity=game, status=discord.Status.idle)
